@@ -1,0 +1,102 @@
+/* purgecss start ignore */
+
+@tailwind base;
+
+@font-face {
+  font-family: DellmonteSans;
+  src: url("/dellmonte-sans.otf") format("opentype");
+}
+
+.dellmontesans {
+  font-family: "DellmonteSans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-y: scroll;
+}
+
+.our-white {
+  color: #fcece3;
+}
+
+.dark-blue {
+  color: #004557;
+}
+
+.dark-blue-bg {
+  background-color: #004557;
+}
+
+.our-orange {
+  color: #e85d24;
+}
+
+.light-blue {
+  color: #a2d1e0;
+}
+
+.shadow-lg-light-blue {
+  box-shadow: 0 10px 15px -3px #a2d1e0, 0 4px 6px -2px #a2d1e0;
+}
+
+.shadow-outline-light-blue {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.light-blue-bg {
+  background-color: #a2d1e0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "DellmonteSans";
+}
+
+.header {
+  font-size: 15vh;
+  line-height: 1;
+}
+
+.header-slogan {
+  font-size: 5vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 12vw;
+    padding-top: 20px;
+  }
+  .header-slogan {
+    font-size: 5vw;
+    padding-bottom: 20px;
+  }
+}
+
+@media (orientation: portrait) {
+  .header {
+    font-size: 12vw;
+  }
+  .header-slogan {
+    font-size: 5vw;
+  }
+}
+
+body {
+  background-image: url("/banner-4-cropped.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+}
+
+/* purgecss end ignore */
+
+@tailwind components;
+@tailwind utilities;
